@@ -46,13 +46,22 @@ public class Karakter {
     }
     
     public void hasznal(String targynev, int darab, boolean kevesebbVan){
-        keresettfelszereles = new ArrayList<Targy>();
+        ArrayList<Targy> keresettek = new ArrayList<Targy>();
         for (Targy elem : felszereles) {
             if (elem.nev == targynev) {
-                
+                keresettek.add(elem);
             }
         }
-        int i = 0;
+        
+        for (int i = 0; i < darab; i++) {
+            if (keresettek.size() > 0) {
+                Targy eltavolitando = keresettek.get(keresettek.size()-1);
+                felszereles.remove(eltavolitando);
+                keresettek.remove(eltavolitando);
+            }
+        }
+        
+        
         
         
         

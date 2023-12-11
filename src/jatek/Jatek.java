@@ -17,9 +17,9 @@ public class Jatek {
        Karakter k1 = new Karakter();
        Targy t1 = new Targy("kard", "kard...");
        
-       k1.felvesz(t1, 3);
+       k1.felvesz(t1, 4);
         System.out.println(k1);
-       k1.hasznal("kard");
+       k1.hasznal("kard", 5);
         System.out.println(k1);
     }
     
