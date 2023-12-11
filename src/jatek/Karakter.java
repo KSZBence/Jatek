@@ -13,17 +13,27 @@ import java.util.Random;
  */
 public class Karakter {
     Random rnd = new Random();
-    ArrayList<String>felszereles;
+    ArrayList<Targy>felszereles;
+    int eletero, ugyesseg, szerencse;
 
     public Karakter() {
-        int eletero = d6()+d6()+12;
-        int ugyesseg = d6() + 6;
-        int szerencse = d6() + 6;
+        this.eletero = d6()+d6()+12;
+        this.ugyesseg = d6() + 6;
+        this.szerencse = d6() + 6;
     }
     
     private int d6(){
         return rnd.nextInt(6)+1;
     }
     
+    public void felvesz(Targy targy){
+        felvesz(targy, 1);
+    }
+    
+    public void felvesz(Targy targy, int darab){
+        for (int i = 0; i < darab; i++) {
+            felszereles.add(targy);
+        }
+    }
     
 }
