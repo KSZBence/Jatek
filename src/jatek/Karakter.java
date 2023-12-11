@@ -4,12 +4,22 @@
  */
 package jatek;
 
+import java.util.Random;
+
 /**
  *
  * @author kunszekely.bence
  */
 public class Karakter {
-    public static void main(String[] args) {
-        Karakter k1 = new Karakter();
+    Random rnd = new Random();
+
+    public Karakter() {
+        int eletero = d6()+d6()+12;
+        int ugyesseg = d6() + 6;
+        int szerencse = d6() + 6;
+    }
+    
+    private int d6(){
+        return rnd.nextInt(6)+1;
     }
 }
