@@ -13,13 +13,14 @@ import java.util.Random;
  */
 public class Karakter {
     Random rnd = new Random();
-    ArrayList<Targy>felszereles;
+    ArrayList<Targy> felszereles;
     int eletero, ugyesseg, szerencse;
 
     public Karakter() {
         this.eletero = d6()+d6()+12;
         this.ugyesseg = d6() + 6;
         this.szerencse = d6() + 6;
+        felszereles = new ArrayList<Targy>();
     }
     
     private int d6(){
@@ -32,8 +33,36 @@ public class Karakter {
     
     public void felvesz(Targy targy, int darab){
         for (int i = 0; i < darab; i++) {
-            felszereles.add(targy);
+            this.felszereles.add(targy);
         }
     }
+    
+    public void hasznal(String targynev){
+        hasznal(targynev, 1);
+    }
+    
+    public void hasznal(String targynev, int darab){
+        hasznal(targynev, darab, true);
+    }
+    
+    public void hasznal(String targynev, int darab, boolean kevesebbVan){
+        keresettfelszereles = new ArrayList<Targy>();
+        for (Targy elem : felszereles) {
+            if (elem.nev == targynev) {
+                
+            }
+        }
+        int i = 0;
+        
+        
+        
+        
+    }
+
+    @Override
+    public String toString() {
+        return "Karakter{" + "felszereles=" + felszereles + ", eletero=" + eletero + ", ugyesseg=" + ugyesseg + ", szerencse=" + szerencse + '}';
+    }
+    
     
 }

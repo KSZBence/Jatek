@@ -19,7 +19,11 @@ public class Targy {
         this.leiras = leiras;
         this.uuid = UUID.randomUUID();
     }
-    
+
+    @Override
+    public String toString() {
+        return "Targy{" + "nev=" + nev + ", leiras=" + leiras + '}';
+    } 
     
     
 }

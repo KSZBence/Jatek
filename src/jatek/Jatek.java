@@ -15,6 +15,12 @@ public class Jatek {
      */
     public static void main(String[] args) {
        Karakter k1 = new Karakter();
+       Targy t1 = new Targy("kard", "kard...");
+       
+       k1.felvesz(t1, 3);
+        System.out.println(k1);
+       k1.hasznal("kard");
+        System.out.println(k1);
     }
     
 }
