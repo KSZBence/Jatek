@@ -4,6 +4,7 @@
  */
 package jatek;
 
+import java.util.ArrayList;
 import java.util.Random;
 
 /**
@@ -12,6 +13,7 @@ import java.util.Random;
  */
 public class Karakter {
     Random rnd = new Random();
+    ArrayList<String>felszereles;
 
     public Karakter() {
         int eletero = d6()+d6()+12;
@@ -22,4 +24,6 @@ public class Karakter {
     private int d6(){
         return rnd.nextInt(6)+1;
     }
+    
+    
 }
