@@ -9,5 +9,6 @@ package jatek;
  * @author kunszekely.bence
  */
 public interface MasikIrany {
-    
+        public String masikBtnFelirat();
+        public Helyszin masikirány();
 }

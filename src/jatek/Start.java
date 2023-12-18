@@ -20,4 +20,14 @@ public class Start extends Helyszin{
     public String egyikBtnFelirat() {
         return "Kezdes...";
     }
+
+    @Override
+    public String masikBtnFelirat() {
+        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
+    }
+
+    @Override
+    public Helyszin masikirány() {
+        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
+    }
 }

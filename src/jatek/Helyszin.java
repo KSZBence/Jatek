@@ -8,7 +8,7 @@ package jatek;
  *
  * @author kunszekely.bence
  */
-public abstract class Helyszin {
+public abstract class Helyszin implements MasikIrany{
     public abstract String leiras();
     public abstract String egyikBtnFelirat();
     public abstract Helyszin egyikirány();

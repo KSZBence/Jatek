@@ -21,6 +21,16 @@ public class Jobbra extends Helyszin{
 
     @Override
     public String egyikBtnFelirat() {
-        return "...";
+        return "nyugat";
+    }
+
+    @Override
+    public String masikBtnFelirat() {
+        return "kelet";
+    }
+
+    @Override
+    public Helyszin masikirány() {
+        return new Bal();
     }
 }

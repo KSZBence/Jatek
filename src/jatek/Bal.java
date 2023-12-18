@@ -22,7 +22,17 @@ public class Bal extends Helyszin{
 
     @Override
     public String egyikBtnFelirat() {
-        return "egyik";
+        return "észak";
+    }
+
+    @Override
+    public String masikBtnFelirat() {
+        return "dél";
+    }
+
+    @Override
+    public Helyszin masikirány() {
+        return new Jobbra();
     }
     
 }
