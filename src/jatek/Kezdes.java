@@ -8,6 +8,8 @@ package jatek;
  *
  * @author kunszekely.bence
  */
-public abstract class Helyszin {
-    public abstract String leiras();
+public class Kezdes extends Helyszin{
+    public String leiras(){
+        return "Ez a Kezdes";
+    }
 }

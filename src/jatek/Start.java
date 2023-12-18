@@ -6,5 +6,8 @@ package jatek;
 
 
 public class Start extends Helyszin{
-    
+
+    public String leiras(){
+        return "Ez a Start";
+    }
 }
