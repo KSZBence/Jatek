@@ -4,20 +4,25 @@
  */
 package jatek;
 
+/**
+ *
+ * @author kunszekely.bence
+ */
+public class Bal extends Helyszin{
 
-public class Start extends Helyszin{
-
-    public String leiras(){
-        return "Ez a Start";
+    @Override
+    public String leiras() {
+        return "Balra";
     }
 
     @Override
     public Helyszin egyikirány() {
-        return new Start();
+        return new Bal();
     }
 
     @Override
     public String egyikBtnFelirat() {
-        return "Kezdes...";
+        return "egyik";
     }
+    
 }
