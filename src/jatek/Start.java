@@ -10,4 +10,9 @@ public class Start extends Helyszin{
     public String leiras(){
         return "Ez a Start";
     }
+
+    @Override
+    public Helyszin egyikirány() {
+        return new Start();
+    }
 }

@@ -12,4 +12,11 @@ public class Kezdes extends Helyszin{
     public String leiras(){
         return "Ez a Kezdes";
     }
+
+    @Override
+    public Helyszin egyikirány() {
+        return new Kezdes();
+    }
+    
+    
 }
