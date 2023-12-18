@@ -13,7 +13,7 @@ public class Start extends Helyszin{
 
     @Override
     public Helyszin egyikirány() {
-        return new Start();
+        return new Kezdes();
     }
 
     @Override

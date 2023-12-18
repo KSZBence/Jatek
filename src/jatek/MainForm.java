@@ -71,10 +71,15 @@ public class MainForm extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
-        jButton2.setVisible(true);
         helyszin = helyszin.egyikirány();
         jButton2.setText(helyszin.egyikBtnFelirat());
-        jTextArea1.setText(helyszin.leiras());
+        jTextArea1.insert(helyszin.leiras()+"\n",0);
+        
+        if (helyszin instanceof MasikIrany) {
+            jButton1.setVisible(true);
+        }else{
+            jButton1.setVisible(false);
+        }
     }//GEN-LAST:event_jButton2ActionPerformed
 
     /**

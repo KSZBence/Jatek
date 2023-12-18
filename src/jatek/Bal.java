@@ -12,7 +12,7 @@ public class Bal extends Helyszin{
 
     @Override
     public String leiras() {
-        return "Balra";
+        return "Ez balra van. Délre vagy északra";
     }
 
     @Override
