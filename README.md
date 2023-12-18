@@ -4,3 +4,6 @@
 ## Kun-Székely bence
 ## A probléma
 Sok választási lehetőség esetén az elágazásos megvalósítás nem megfelelő.
+Ötletelések: 
+*építő - build
+*állapot -state 
